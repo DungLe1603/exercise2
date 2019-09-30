@@ -1,16 +1,32 @@
 <?php
-required_once("dbConnect.php");
 
-class News
+require('dbConnect.php');
+
+class News extends Connect
 {
-	public function getAllNews()
-	{
-		//code
+	protected $conn;
+
+	public function __construct() {
+		$this->conn = $this->dbConnect();
 	}
 
-	public function getNewsDetail($stid)
+	public function __destruct() {
+		$this->conn->close();
+	}
+
+	public function getAllNews ()
 	{
-		//code
+		$sql = "SELECT * FROM news";
+		$list = $this->conn->query($sql);
+		return $list;
+	}
+
+	public function getNewsDetail($id)
+	{
+		$sql = "SELECT * FROM news where id = " . $id;
+		$data = $this->conn->query($sql);
+		$detail = $data->fetch_assoc();
+		return $detail;
 	}
 }
 ?>

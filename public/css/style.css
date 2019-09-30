@@ -1,0 +1,33 @@
+.content-section {
+	margin: 20px auto;
+	width: 90%;
+}
+.news-block {
+	padding: 20px;
+}
+.news-block h2 {
+	text-transform: uppercase;
+}
+.list-item {
+	text-decoration: none;
+	display: flex;
+	margin: 20px 0;
+	align-items: center;
+	color: #000;
+}
+.list-item img {
+	width: 70px;
+	height: 70px;
+	margin: 0 10px;
+}
+.news-item {
+	display: flex;
+}
+.news-item img {
+	width: 250px;
+	height: 250px;
+}
+.news-detail {
+	padding: 0 20px;
+	display: inline;
+}
