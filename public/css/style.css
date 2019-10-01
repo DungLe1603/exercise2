@@ -11,7 +11,7 @@
 .list-item {
 	text-decoration: none;
 	display: flex;
-	margin: 20px 0;
+	margin: 10px 0;
 	align-items: center;
 	color: #000;
 }
@@ -30,4 +30,32 @@
 .news-detail {
 	padding: 0 20px;
 	display: inline;
+}
+.btn-add {
+	padding: 10px 20px;
+	background: #28a745;
+}
+button a {
+	text-decoration: none;
+}
+.btn-add a {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #fff;
+}
+.flex {
+	display: flex;
+	align-items: center;
+}
+.info {
+	width: 60%;
+}
+.action {
+	width: 40%;
+}
+.btn-edit a {
+	color: #007bff;
+}
+.btn-delete a {
+	color: #dc3545;
 }
