@@ -1,12 +1,12 @@
 <div class="news-block">
 	<h2><strong>Trang chủ</strong></h2>
 	<br>
-	<button class="btn-add"><a href="index.php?ac=add">Thêm tin tức</a></button>
+	<button class="btn btn-submit"><a href="index.php?ac=add">Thêm tin tức</a></button>
 	<?php
 		if ($list->num_rows > 0) {
 			while($row = $list->fetch_assoc()) {
 	?>
-			<div class="flex">
+			<div class="flex block-item">
 				<div class="info">
 					<a class='list-item' href='index.php?ac=show&id=<?php echo $row["id"]; ?>'>
 						<img src='public/images/<?php echo $row["image"]; ?>' alt='News image'>
@@ -18,7 +18,7 @@
 						<a href="index.php?ac=edit&id=<?php echo $row['id']; ?>">Sửa</a>
 					</button>
 					<button class="btn-act btn-delete">
-						<a href="index.php?ac=detele&id=<?php echo $row['id']; ?>" onclick="return confirm('Bạn có muốn xóa tin tức này?');">Xóa</a>
+						<a href="index.php?ac=delete&id=<?php echo $row['id']; ?>" onclick="return confirm('Bạn có muốn xóa tin tức này?');">Xóa</a>
 					</button>
 				</div>
 			</div>
