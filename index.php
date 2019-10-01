@@ -9,7 +9,9 @@
 <body>
 	<div class="content-section">
 		<?php
-			include('Controller/NewsController.php');
+			require_once('Controller/NewsController.php');
+			$news = new NewsController();
+			$news->handle();
 		?>
 	</div>
 </body>

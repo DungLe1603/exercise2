@@ -8,10 +8,13 @@
 .news-block h2 {
 	text-transform: uppercase;
 }
+.block-item {
+	align-items: center;
+}
 .list-item {
 	text-decoration: none;
 	display: flex;
-	margin: 20px 0;
+	margin: 10px 0;
 	align-items: center;
 	color: #000;
 }
@@ -30,4 +33,70 @@
 .news-detail {
 	padding: 0 20px;
 	display: inline;
+}
+.btn {
+	padding: 8px 16px;
+	border-style: none;
+}
+.btn-submit {
+	background: #28a745;
+	color: #fff;
+	margin-right: 10px;
+}
+.btn-submit {
+	color: #fff;
+}
+button a {
+	text-decoration: none;
+}
+.btn-add a {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #fff;
+}
+.flex {
+	display: flex;
+}
+.info {
+	width: 60%;
+}
+.action {
+	width: 40%;
+}
+.btn-edit a {
+	color: #007bff;
+}
+.btn-delete a {
+	color: #dc3545;
+}
+
+.form-block {
+	padding: 20px 50px;
+	background: #eee;
+}
+.news-info {
+	width: 60%;
+}
+.news-image {
+	width: 40%;
+}
+.form-group {
+	margin: 20px 0;
+}
+.form-label {
+	display: block;
+	margin: 10px 0;
+}
+.form-control {
+	width: 80%;
+	margin: auto;
+	padding: 8px 16px;
+}
+.form-img {
+	max-width: 400px;
+	height: 250px;
+}
+.form-action {
+	margin: auto;
+	padding:10px;
 }
