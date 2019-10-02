@@ -60,9 +60,7 @@ class News extends Connect
 			move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
 			$sql = "UPDATE news SET title = '$title', description = '$description', image = '$image' WHERE id = '$id'";
 		}
-		if ($this->conn->query($sql) === TRUE) {
-			echo "Update successfully";
-		} else {
+		if ($this->conn->query($sql) !== TRUE) {
 			echo "Error: " . $sql . "<br>" . $this->conn->error;
 		}
 	}

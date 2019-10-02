@@ -56,8 +56,7 @@ class  NewsController
 	public function store()
 	{
 		$news = $this->modelNews->insertNews();
-		$list = $this->modelNews->getAllNews();
-		include_once("View/list.php");
+		$this->index();
 	}
 
 	public function show($id)
@@ -84,16 +83,14 @@ class  NewsController
 	public function update($id)
 	{
 		$news = $this->modelNews->updateNews($id);
-		$list = $this->modelNews->getAllNews();
-		include_once("View/list.php");
+		$this->index();
 	}
 
 	public function delete($id)
 	{
 		if ($id) {
 			$detail = $this->modelNews->deleteNews($id);
-			$list = $this->modelNews->getAllNews();
-			include_once("View/list.php");
+			$this->index();
 		} else {
 			echo "Trang không tồn tại!";
 		}

@@ -6,23 +6,24 @@
 				<div class="news-info">
 					<div class="form-group">
 						<label class="form-label">Tiêu đề</label>
-						<input type="text" name="title" class="form-control">
+						<input type="text" name="title" required class="form-control">
 					</div>
 					<div class="form-group">
 						<label class="form-label">Nội dung</label>
-						<textarea class="form-control" name="description" rows="10"></textarea>
+						<textarea class="form-control" name="description" rows="10" required></textarea>
 					</div>
 				</div>
 				<div class="news-image">
 					<div class="form-group">
 						<label class="form-label">Hình ảnh</label>
 						<img class="form-img" id="view-img" src="public/images/image-default.png" alt="News image">
-						<input class="form-control" type="file" name="image" accept="image/x-png,image/gif,image/jpeg" onchange="preview(this);">
+						<input class="form-control" type="file" name="image" required accept="image/x-png,image/gif,image/jpeg" onchange="preview(this);">
 					</div>
 				</div>
 			</div>
 			<div class="form-action">
 				<button type="submit" class="btn btn-submit">Lưu</button>
+				<button type="button" class="btn btn-back"><a href="index.php">Trở về</a></button>
 				<button type="reset" class="btn btn-reset">Hủy</button>
 			</div>
 		</form>

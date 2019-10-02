@@ -6,11 +6,11 @@
 				<div class="news-info">
 					<div class="form-group">
 						<label class="form-label">Tiêu đề</label>
-						<input type="text" name="title" class="form-control" value="<?php echo $detail['title'];?>">
+						<input type="text" name="title" class="form-control" required value="<?php echo $detail['title'];?>">
 					</div>
 					<div class="form-group">
 						<label class="form-label">Nội dung</label>
-						<textarea class="form-control" name="description" rows="10"><?php echo $detail['description'];?></textarea>
+						<textarea class="form-control" name="description" rows="10" required><?php echo $detail['description'];?></textarea>
 					</div>
 				</div>
 				<div class="news-image">
@@ -23,6 +23,7 @@
 			</div>
 			<div class="form-action">
 				<button type="submit" class="btn btn-submit">Lưu</button>
+				<button type="button" class="btn btn-back"><a href="index.php">Trở về</a></button>
 				<button type="reset" class="btn btn-reset">Hủy</button>
 			</div>
 		</form>

@@ -37,13 +37,13 @@
 .btn {
 	padding: 8px 16px;
 	border-style: none;
+	margin-right: 10px;
 }
 .btn-submit {
 	background: #28a745;
 	color: #fff;
-	margin-right: 10px;
 }
-.btn-submit {
+.btn-submit a, .btn-back a{
 	color: #fff;
 }
 button a {
@@ -99,4 +99,12 @@ button a {
 .form-action {
 	margin: auto;
 	padding:10px;
+}
+.btn-back {
+	color: #fff;
+	background: #007bff;
+}
+.btn-reset {
+	color: #fff;
+	background: #999;
 }
