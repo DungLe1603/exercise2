@@ -74,7 +74,12 @@ class  NewsController
 	{
 		if ($id) {
 			$detail = $this->modelNews->getNewsDetail($id);
-			include_once("View/edit.php");
+			if ($detail) {
+				include_once("View/edit.php");
+			} else {
+				echo "Không tìm thấy thông tin!";
+			}
+			 die();
 		} else {
 			echo "Trang không tồn tại!";
 		}

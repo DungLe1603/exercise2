@@ -1,5 +1,5 @@
 <div class="news-block">
-	<button class="btn-back"><a href="index.php">Trang chủ</a></button>
+	<button class="btn"><a href="index.php">Trang chủ</a></button>
 	<h2><strong>Tin tức chi tiết</strong></h2>
 	<div class="news-item">
 		<?php

@@ -53,7 +53,9 @@ class News extends Connect
 			$sql = "UPDATE news SET title = '$title', description = '$description' WHERE id = '$id'";
 		} else {
 			$oldImage = 'public/images/' . $detail['image'];
-			unlink($oldImage);
+			if (file_exists($oldImage)) {
+				unlink($oldImage);
+			}
 			$image = time().$_FILES['image']['name'];
 			$target_dir = "public/images/";
 			$target_file = $target_dir . basename($image);
@@ -71,7 +73,9 @@ class News extends Connect
 		$sql = "DELETE FROM news where id = " . $id;
 		if ($this->conn->query($sql)) {
 			$oldImage = 'public/images/' . $detail['image'];
-			unlink($oldImage);
+			if (file_exists($oldImage)) {
+				unlink($oldImage);
+			}
 		} else {
 			echo "Error: " . $sql . "<br>" . $this->conn->error;
 		}

@@ -1,5 +1,5 @@
 <div class="news-block">
-	<h2><strong>Tạo mới thông tin</strong></h2>
+	<h2><strong>Tạo mới tin tức</strong></h2>
 	<div class="form-block">
 		<form action="index.php?ac=store" method="post" enctype="multipart/form-data">
 			<div class="flex">
