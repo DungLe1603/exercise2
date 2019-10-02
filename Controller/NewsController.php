@@ -56,7 +56,7 @@ class  NewsController
 	public function store()
 	{
 		$news = $this->modelNews->insertNews();
-		$this->index();
+		header("location: index.php");
 	}
 
 	public function show($id)
@@ -83,14 +83,14 @@ class  NewsController
 	public function update($id)
 	{
 		$news = $this->modelNews->updateNews($id);
-		$this->index();
+		header("location: index.php");
 	}
 
 	public function delete($id)
 	{
 		if ($id) {
 			$detail = $this->modelNews->deleteNews($id);
-			$this->index();
+			header("location: index.php");
 		} else {
 			echo "Trang không tồn tại!";
 		}
